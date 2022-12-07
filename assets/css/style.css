@@ -6,7 +6,9 @@
     font-size: 18px;
     font-family: "Raleway", sans-serif;
   }
-  
+
+/**--- background ---**/
+
 html {
     background: url(../images/background.jpeg) no-repeat center center fixed;
     background-size: cover;
@@ -17,22 +19,30 @@ html {
 /** --- Heading ---**/
 
 .heading {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    height: 5rem;
     font-size: 2.5rem;
 }
 
 /**--- body ---**/
 
 .question-area {
-    background-color: rgba(101, 219, 86, .5);
-    height: 590px;
-    width: 1000px;
-    margin: 0;
+    background-color: rgba(96, 202, 82, 0.5);
+    box-sizing: border-box;
+    width: 85%;
+    height: 65vh;
+    max-height: 450px;
+    max-width: 830px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
     border-radius: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
+
+.score-area {
+    width: 50%;
+    font-size: 2rem;
+    margin: auto;
+    padding: 50px 0;
+}
+
