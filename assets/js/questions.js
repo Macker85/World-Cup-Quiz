@@ -1,4 +1,4 @@
-let games =[
+let questions =[
     [
      {
        question: "Who won the 2018 FIFA World Cup?",

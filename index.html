@@ -13,7 +13,24 @@
 <body>
     <h1 class="heading">Test your world cup knowledge</h1>
     <section class="question-area">
-        <div class="question">Questions to appear here</div>
+        <div id="container">
+            <div id="start">Start Quiz!</div>
+            <div id="quiz">
+                <div id="question"></div>
+                <div id="answers"></div>
+                    <div class="answer" id="A" onclick="checkAnswer('A')"></div>
+                    <div class="answer" id="B" onclick="checkAnswer('B')"></div>
+                    <div class="answer" id="C" onclick="checkAnswer('C')"></div>
+                    <div class="answer" id="D" onclick="checkAnswer('D')"></div>
+                <div id="timer"></div>
+                    <div id="counter"></div>
+                    <div id="bTimeGauge"></div>
+                    <div id="timeGauge"></div>
+                <div id="progess"></div>
+            </div>
+            <div id="score"></div>
+        </div>
+        <!--<div class="question">Questions to appear here</div>
         <div class="answer-options">
             <button class="btn answer-a btn--blue"><i class="fa-regular fa-futbol">answer-a</i></button>
             <button class="btn answer-b btn--green"><i class="fa-regular fa-futbol"></i>answer-b</button>
@@ -27,9 +44,11 @@
         <div class="score-area">
             <p class="scores">Correct Answers <span id="score">0</span></p>
             <p class="scores">Incorrect Answers <span id="incorrect">0</span></p>
-        </div>
+        </div>-->
+        
     </section>
 
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/questions.js"></script>
 </body>
 </html>
