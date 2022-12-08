@@ -211,4 +211,8 @@ let questions =[
         choiceD: "Every year",
         correct: "B",
       }
-    ];
+    ]
+
+export {
+    questions
+}

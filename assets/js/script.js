@@ -1,47 +1,16 @@
-const startButton = document.getElementById('start-btn');
+import {
+    questions
+} from "./questions";
 
-startButton.addEventListener('click', startGame);
+// select all elements
+const start = document.getElementById("start");
+const quiz = document.getElementById("quiz");
+const question = document.getElementById("question");
+const answerA = document.getElementById("A");
+const answerB = document.getElementById("B");
+const answerC = document.getElementById("C");
+const answerD = document.getElementById("D");
+const timeGauge = document.getElementById("counter");
+const scoreDiv = document.getElementById("timeGauge");
 
-function startGame(){
-    console.log('started');
-}
-
-function runGame(){
-
-}
-
-function checkAnswer() {
-    
-}
-
-function calculateCorrectAnswer() {
-    
-}
-
-function incrementScore() {
-    
-}
-
-function incrementWrongAnswer() {
-    
-}
-
-function displayQuestion() {
-    
-}
-
-function displayAnswerA() {
-    
-}
-
-function displayAnswerB() {
-    
-}
-
-function displayAnswerC() {
-    
-}
-
-function displayAnswerD() {
-    
-}
+//
