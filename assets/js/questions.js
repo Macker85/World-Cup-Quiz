@@ -161,5 +161,54 @@ let games =[
         choiceC: "$3 Billion",
         choiceD: "$300 Million",
         correct: "A",
-      },
-    ]
+      },{
+        question: "The highest scoring game at a tournament was between Austria and Switzerland in 1954, what was the fulltime score?",
+        choiceA: "Austria 7-0 Switzerland",
+        choiceB: "Austria 5-7 Switzerland",
+        choiceC: "Austria 7-5 Switzerland",
+        choiceD: "Austria 10-2 Switzerland",
+        correct: "C",
+      },{
+        question: "Who was the youngest player to play at a tournament at just 17years and 40days old?",
+        choiceA: "Pele",
+        choiceB: "Samuel Eto'o",
+        choiceC: "Ronaldo(from Brazil)",
+        choiceD: "Norman Whiteside",
+        correct: "D",
+      },{
+        question: "What is the USAs highest finishing position at a World Cup??",
+        choiceA: "3rd",
+        choiceD: "4th",
+        choiceC: "Quater Final",
+        choiceB: "Group stages",
+        correct: "A",
+      },{
+        question: "In what year was Diego Maradonas 'Hand of God' incident?",
+        choiceA: "1978",
+        choiceB: "1986",
+        choiceC: "1990",
+        choiceD: "1994",
+        correct: "B",
+      },{
+        question: "Which nation is the only one to participate in every tournament??",
+        choiceA: "France",
+        choiceB: "Germany",
+        choiceC: "Brazil",
+        choiceD: "England",
+        correct: "C",
+      },{
+        question: "What country got to keep the original World Cup trophy (Jules Rimet Trophy) after winning it 3 times in a row?",
+        choiceA: "Germany",
+        choiceB: "Brazil",
+        choiceC: "France",
+        choiceD: "Italy",
+        correct: "B",
+      },{
+        question: "How often is the World Cup tournament held?",
+        choiceA: "Every 10 years",
+        choiceB: "Every 4 years",
+        choiceC: "Every 2 years",
+        choiceD: "Every year",
+        correct: "B",
+      }
+    ];
