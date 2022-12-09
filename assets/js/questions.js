@@ -212,7 +212,6 @@ let questions =[
         correct: "B",
       }
     ]
+];
 
-export {
-    questions
-}
+export {questions};
