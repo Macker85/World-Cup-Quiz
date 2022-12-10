@@ -7,8 +7,10 @@ const answerA = document.getElementById("A");
 const answerB = document.getElementById("B");
 const answerC = document.getElementById("C");
 const answerD = document.getElementById("D");
-const timeGauge = document.getElementById("counter");
-const scoreDiv = document.getElementById("timeGauge");
+const counter = document.getElementById("counter");
+const timeGauge = document.getElementById("timeGauge");
+const scoreDiv = document.getElementById("score");
+const progress = document.getElementById("progress");
 
 const lastQuestion = questions.length - 1;
 let runningQuestion = 0;
