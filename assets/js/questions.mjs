@@ -1,4 +1,5 @@
-let questions =[
+export const questions =
+[
     [
      {
        question: "Who won the 2018 FIFA World Cup?",
@@ -213,5 +214,3 @@ let questions =[
       }
     ]
 ];
-
-export {questions};

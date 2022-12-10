@@ -1,6 +1,4 @@
-import {
-    questions
-} from "./questions"
+import { questions } from "./questions.mjs";
 
 const start = document.getElementById("start");
 const quiz = document.getElementById("quiz");
@@ -28,7 +26,11 @@ function renderQuestion() {
 start.style.display = "none";
 renderQuestion();
 quiz.style.display = "block";
+renderProgress();
 
 function renderProgress() {
-    
+    for(let qIndex = 0; qIndex <= lastQuestion; qIndex++)
+    {
+        progress.innerHTML += "<div class='prog' id="+ qIndex +"></div>";
+    }
 }
