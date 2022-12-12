@@ -1,7 +1,6 @@
 /** --- Global style ---**/
 * {
     padding: 0;
-    box-sizing: border-box;
     font-size: 18px;
     font-family: "Raleway", sans-serif;
   }
@@ -21,6 +20,7 @@ html {
     text-align: center;
     height: 5rem;
     font-size: 2.5rem;
+    padding: 20px;
 }
 
 /**--- body ---**/
@@ -31,11 +31,16 @@ html {
     width: 85%;
     height: 65vh;
     max-height: 450px;
-    max-width: 830px;
     margin-left: auto;
     margin-right: auto;
     padding: 1%;
     border-radius: 20px;
+}
+
+#quiz {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #container {
@@ -77,25 +82,17 @@ html {
     font-size: 1.25em;
 }
 
-#answers{
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    justify-content: center;
-    position: absolute;
-    gap: 35px;
-    width : 480px;
-    padding : 10px
-}
 .answer{
-    width : 135px;
+    width: auto;
+    margin: 5px 0;
     text-align: center;
-    border : 1px solid grey;
-    border-radius: 5px;
+    border : 2px solid #000;
+    border-radius: 10px;
     cursor: pointer;
     padding : 5px;
 }
 .answer:hover{
-    border : 2px solid grey;
+    border : 2px solid #d4af37;
     font-weight: bold;
 }
 
@@ -108,19 +105,23 @@ html {
     font-size: 3em;
 }
 #btimeGauge{
-    width : 150px;
+    display: flex;
+    justify-content: center;
     height : 10px;
     border-radius: 10px;
     background-color: #000000;
 }
 #timeGauge{
+    display: flex;
+    justify-content: center;
     height : 10px;
     border-radius: 10px;
     background-color: mediumseagreen;
     margin-top : -10px;
 }
 #progress{
-    width : 50vw;
+    display: flex;
+    justify-content: center;
     padding:5px;
 }
 .prog{
