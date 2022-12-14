@@ -1,108 +1,213 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+![hero image](assets/readmeimages/hero.webp)
 
-Welcome Macker85,
+# World Cup Quiz
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Introduction
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+World Cup Quiz is a time-based quiz game taken as inspiration from this years FIFA World Cup. The game contains multiple choice questions, with a 15 second limit per question. 
 
-## Gitpod Reminders
+The interactive code was developed in Javascript and the interface was developed in HTML and CSS.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+<a href="https://macker85.github.io/World-Cup-Quiz/" rel="nofolow">Play Answer-Time quiz</a>
 
-`python3 -m http.server`
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
+## Table of Contents
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+- [Answer-Time Quiz](#answer-time-quiz)
+  - [Introduction](#introduction)
+  - [Table of Contents](#table-of-contents)
+  - [Design](#design)
+    - [Color Scheme](#color-scheme)
+    - [Wireframe](#wireframe)
+  - [Technologies](#technologies)
+  - [User Stories](#user-stories)
+  - [Features](#features)
+    - [Welcome Section](#welcome-section)
+    - [Choose Game Screen](#choose-game-screen)
+    - [Rules Menu](#how-to-play-screen)
+    - [Question Screen](#Question-screen)
+    - [Correct/Incorrect Answer Screen](#Correct/Incorrect-answer-screen)
+    - [Timeout Screen](#timeout-screen)
+    - [Game over Screen](#game-over-screen)
+  - [Testing](#testing)
+  - [Resolved Bugs](#resolved-bugs)
+  - [Unresolved Bugs](#unresolved-bugs)
+  - [Features I would like to Implement](#features-I-would-like-to-implement)
+  - [Deployment](#deployment)
+  - [Cloning](#cloning)
+  - [Forking](#forking)
+  - [Credits](#credits)
+ 
+## Design
 
-A blue button should appear to click: _Make Public_,
+<!-- This game was designed with a <strong>mobile first</strong> approach. The CSS was built to be compatible with smaller screen sizes first, and was scaled for larger screens where appropriate using media queries.
 
-Another blue button should appear to click: _Open Browser_.
+The game is designed to be as intuitive as possible, with clear distinction for interactive elements via color scheme & hover effects.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+It is designed with each section of the game structured in its own div within the HTML, to allow for easier readability, scalability and de-bugging. -->
 
-To log into the Heroku toolbelt CLI:
+### Color Scheme
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+<!-- For this project, I decided to keep the color scheme pretty simple. I felt the below colors fulfilled what I required, with the expection of the 'correct/incorrect' colors shown on the question result screen. In this specific circumstance I opted for more primary colors to best portray the result.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+![hero image](assets/readmeimages/palette.webp) -->
 
-------
 
-## Release History
+### Wireframe
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+<!-- Due to the simplicity of the design, all devices follow the same structured wireframe, with the only major difference being that the main container for the quiz is set to 50% width on larger screens.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+![wireframe](assets/readmeimages/wireframe.webp) -->
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+## Technologies
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+The technologies used in this project were HTML, CSS and JavaScript. 
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+- HTML5
+- CSS3
+- JavaScript
+- GitHub
+- [Am I Responsive](http://ami.responsivedesign.is/) to test responsiveness
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+## User Stories
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+<!-- | User story        | Implementation |     
+| ------------- |:-------------|
+| User wants to be able to toggle audio        | Have added button to turn audiio on/off |     
+| User would like to choose a quiz type to be tested on different knowledge       | Added multiple quiz options |     
+| User would like to receive costant feedback on progress  | Add overall score to question screen, and add previous questions score to result screen |     
+| User would like some instructions, so that they can understand how to play the game.| Add a how to play button to the welcome screen, which shows the user instructions upon clicking |      -->
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+## Features
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+### Welcome Section
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+<!-- The welcome section is the screen the end user is presented with on page load. 
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+It provides the user with a breif description of the game, along with a start button, and a how to play button. It also contains a logo which redirects to the welcome screen and a toggle for audio, both of which are present on any suqsequent screens.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+![Welcome screen](assets/readmeimages/welcome-screen.webp) -->
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+### Choose Game screen
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+<!-- The choose game screen allows the user to choose which quiz type they would like to play (General Knowledge/Music). 
 
-------
+![Choose Game](assets/readmeimages/choose-game.webp) -->
 
-## FAQ about the uptime script
+### How to Play screen
 
-**Why have you added this script?**
+<!-- The how to play screen provides the user with the guidelines of the game, along with a button to return to the welcome screen.
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+![How To Play](assets/readmeimages/how-to-play.webp) -->
 
-**How will this affect me?**
+### Question screen
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+<!-- The question screen contains the current question number. It also contains a countdown bar, which decreases every second for 10 seconds. It also contains the current question, along with 4 buttons for each answer.
+Finally, it containes the players current overall score, and the total possible score. -->
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+<!-- ![Question Screen](assets/readmeimages/question-screen.webp) -->
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+### Correct/Incorrect Answer screen
 
-**So….?**
+<!-- The correct answer screen displays the selected answer, and the number of seconds it took to select this ansswer. It also displays the number of points added to the overall score. Finally, it displays a button which can be selected to continue to the next question. -->
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+<!-- ![Correct Answer](assets/readmeimages/correct-answer.webp)
 
-**Can I opt out?**
+The incorrect answer screen simply displays the incorrect selected answer, along with a button to continue to the nect question.
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+![Incorrect Answer](assets/readmeimages/incorrect-answer.webp) -->
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+### Timeout Screen
 
-**Anything more?**
+<!-- The timeout screen displays if 10 seconds have passed without an answer being selected. This follows the same template as the incorrect answer screen but just contains the text Times Up! along wit a button to proceed. -->
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+### Game over screen
 
----
+<!-- This screen displays the result of their final answer, their overall score, and a button to start a new game.
 
-Happy coding!
+![Game Over](assets/readmeimages/game-over.webp) -->
+
+## Testing
+
+<!-- This website was tested in the following instances:
+ <ul>
+  <li>Windows PC running Google Chrome Version 105.0.5195.127 (Official Build) (64-bit)
+</li>
+<li>MacBook Pro running Google Chrome (version unknown)</li>
+<li>Android smartphone running Google Chrome Version 106.0.5249.79</li>
+<li>iPhone running Safari</li>
+</ul>
+
+W3C Validation:
+
+![W3C](assets/readmeimages/w3c.webp) -->
+
+<!-- Jigsaw Validation:
+
+![Jigsaw](assets/readmeimages/css.webp)
+
+Jshint validator was used to validate the JavaScript code.
+
+![Jshint](assets/readmeimages/jshint.webp)
+
+Lighhouse score:
+
+![LightHouse Score](assets/readmeimages/lighthouse.webp) --> -->
+
+
+## Resolved Bugs
+
+
+| Bug        | Resolution      |     
+| ------------- |:-------------|
+| Link questions JavaScript to script JavaScript not reading | Change file from .js to .mjs and export questions as 'Const' | 
+| Progress bar and timer not showing on lauched screen | Typo in HTML |
+<!-- | If no answer was selected on the final question, nothing would happen | Yes - created an if/else to check if an answer was selected after timer runs out      | 
+| Timer did not function upon selecting new game      | Yes - Reloaded entire page instead of calling function | -->
+
+ ## Unresolved Bugs
+
+ <!-- Bug   
+(Unable to replicate currently - but not confirmed resolved) - Occasionally some have previously noticed that the next question would not load after selecting next question -->
+
+## Features I would like to implement
+
+<!-- - Option for different game difficulty (Less time to answer)
+- Advanced sound control (music on/off and/or sound effects on/off)
+- More quiz games 
+- Question randomization
+- A leaderboard (when the skills for this have been learned) -->
+
+
+## Deployment 
+This website is deployed to GitHub.
+To deploy to GitHub, I completed the following steps
+1. Login to [GitHub](https://github.com/)
+2. Find the relevant repo, which is in this case ['World-Cup_quiz'](https://github.com/Macker85/World-Cup-Quiz)
+3. Go to the repository settings, and within here select 'pages'
+5. Select `main` in the Source drop down box below the 'Build and deployment' title and click save.
+6. Wait for the live site to become active. Upon reloading a link will appear for the site
+
+## Cloning
+1. On GitHub.com, navigate to the main page of the repository which is ['here'](https://github.com/Macker85/World-Cup-Quiz)
+2. Above the list of files, click  Code.
+3. Copy the URL for the repository.
+4. Open Git Bash.
+5. Change the current working directory to the location where you want the cloned directory.
+6. Type git clone, and then paste the URL you copied earlier.
+7. Press Enter to create your local clone.
+
+## Forking
+1. Login or signup to [GitHub](https://github.com/)
+2. Find the relevant repo, which is in this case ['World-cup-Quiz'](https://github.com/Macker85/World-Cup-Quiz)
+3. Click on the 'Fork' button in the upper left.
+4. A forked version of this repo will be generated.
+
+## Credits
+
+- Stack Overflow
+- Jack, my mentor
+- Code Explained - YouTube videos
+- The ilumni on Slack

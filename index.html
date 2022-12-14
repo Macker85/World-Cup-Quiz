@@ -11,15 +11,15 @@
     <!-- font awesome and google fonts -->
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://kit.fontawesome.com/c12a091464.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>World Cup quiz</title>
 </head>
 <body>
     <h1 class="heading">Test your world cup knowledge</h1>
     <section class="question-area">
-        <div id="container"><i class="fa-solid fa-house"><a href="index.html"></a></i>
+        <div id="container">
             <div id="start" class="buttons">Start Quiz!</div>
             <div id="quiz" style="display: none">
-                <div id="question">Questions to appear here</div>
+                <div id="question"></div>
                 <div id="answers">
                     <div class="answer buttons" id="A" onclick="checkAnswer('A')"></div>
                     <div class="answer buttons" id="B" onclick="checkAnswer('B')"></div>
@@ -28,14 +28,14 @@
                 </div>
                 <div id="timer">
                     <div id="counter"></div>
-                    <div id="btimeGauge">Timer</div>
+                    <div id="btimeGauge"></div>
                     <div id="timeGauge"></div>
                 </div>
-                <div id="progess">Progress bar</div>
+                <div id="progess"></div>
+                <div id="progress"></div>
                 <div class="next-question">
                     <button id="next-question">Next Question</button>
                 </div>
-                <div id="progress"></div>
             </div>
             <div id="score" style="display: none"></div>
         </div>
