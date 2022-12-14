@@ -185,7 +185,7 @@ Lighhouse score:
 This website is deployed to GitHub.
 To deploy to GitHub, I completed the following steps
 1. Login to [GitHub](https://github.com/)
-2. Find the relevant repo, which is in this case ['World-Cup_quiz'](https://github.com/Macker85/World-Cup-Quiz)
+2. Find the relevant repo, which is in this case ['World-Cup-Quiz'](https://github.com/Macker85/World-Cup-Quiz)
 3. Go to the repository settings, and within here select 'pages'
 5. Select `main` in the Source drop down box below the 'Build and deployment' title and click save.
 6. Wait for the live site to become active. Upon reloading a link will appear for the site
@@ -207,7 +207,7 @@ To deploy to GitHub, I completed the following steps
 
 ## Credits
 
+- The ilumni on Slack
 - Stack Overflow
 - Jack, my mentor
 - Code Explained - YouTube videos
-- The ilumni on Slack
