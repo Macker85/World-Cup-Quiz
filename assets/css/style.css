@@ -23,6 +23,15 @@ html {
     padding: 20px;
 }
 
+/*--- Navlink ---*/
+
+.fa-house {
+    border: 1px #000000;
+    color: #d4af37;
+    font-size: 30px;
+    position: absolute;
+}
+
 /**--- body ---**/
 
 .question-area {
@@ -99,8 +108,10 @@ html {
 }
 
 #timer{
+    position: absolute;
     height : 100px;
     width : 200px;
+    bottom : 0px;
     text-align: center;
 }
 #counter{

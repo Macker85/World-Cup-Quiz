@@ -33,7 +33,6 @@ function renderQuestion() {
     answerB.innerHTML = q.choiceB;
     answerC.innerHTML = q.choiceC;
     answerD.innerHTML = q.choiceD;
-    console.log(q)
 }
 
 start.addEventListener("click", startQuiz)
@@ -65,10 +64,24 @@ function renderCounter(){
     }
 };
 
-function checkAnswer() {
-    if(answer === questions[runningQuestion].correct){
+function checkAnswer(answer){
+    if( answer == questions[runningQuestion].correct){
+        // answer is correct
         score++;
-    } else {
-        
+        // change progress color to green
+        answerIsCorrect();
+    }else{
+        // answer is wrong
+        // change progress color to red
+        answerIsWrong();
+    }
+    count = 0;
+    if(runningQuestion < lastQuestion){
+        runningQuestion++;
+        renderQuestion();
+    }else{
+        // end the quiz and show the score
+        clearInterval(TIMER);
+        scoreRender();
     }
 }

@@ -16,7 +16,7 @@
 <body>
     <h1 class="heading">Test your world cup knowledge</h1>
     <section class="question-area">
-        <div id="container">
+        <div id="container"><i class="fa-solid fa-house"><a href="index.html"></a></i>
             <div id="start" class="buttons">Start Quiz!</div>
             <div id="quiz" style="display: none">
                 <div id="question">Questions to appear here</div>
@@ -25,15 +25,17 @@
                     <div class="answer buttons" id="B" onclick="checkAnswer('B')"></div>
                     <div class="answer buttons" id="C" onclick="checkAnswer('C')"></div>
                     <div class="answer buttons" id="D" onclick="checkAnswer('D')"></div>
-            </div>
-                <div id="timer"></div>
+                </div>
+                <div id="timer">
                     <div id="counter"></div>
                     <div id="btimeGauge">Timer</div>
                     <div id="timeGauge"></div>
+                </div>
                 <div id="progess">Progress bar</div>
                 <div class="next-question">
                     <button id="next-question">Next Question</button>
                 </div>
+                <div id="progress"></div>
             </div>
             <div id="score" style="display: none"></div>
         </div>
