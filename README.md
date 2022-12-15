@@ -8,13 +8,13 @@ World Cup Quiz is a time-based quiz game taken as inspiration from this years FI
 
 The interactive code was developed in Javascript and the interface was developed in HTML and CSS.
 
-<a href="https://macker85.github.io/World-Cup-Quiz/" rel="nofolow">Play Answer-Time quiz</a>
+<a href="https://macker85.github.io/World-Cup-Quiz/" rel="nofolow">Play World Cup Quiz</a>
 
 
 
 ## Table of Contents
 
-- [Answer-Time Quiz](#answer-time-quiz)
+- [World Cup Quiz](#World-Cup-Quiz)
   - [Introduction](#introduction)
   - [Table of Contents](#table-of-contents)
   - [Design](#design)

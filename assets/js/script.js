@@ -1,6 +1,5 @@
 import { questions } from "./questions.mjs";
 
-// let buttons = document.getElementsByClassName("buttons");
 const start = document.getElementById("start");
 const quiz = document.getElementById("quiz");
 const question = document.getElementById("question");
@@ -61,27 +60,62 @@ function renderCounter(){
         count++
     } else {
         count = 0;
+        answerIsWrong();
+        if(runningQuestion < lastQuestion){
+            runningQuestion++
+            renderQuestion();
+        }else{
+            clearInterval(TIMER);
+            scoreRender();
+        }
     }
 };
 
 function checkAnswer(answer){
-    if( answer == questions[runningQuestion].correct){
+    if ( answer == questions[runningQuestion].correct){
         // answer is correct
         score++;
         // change progress color to green
         answerIsCorrect();
-    }else{
+    } else {
         // answer is wrong
         // change progress color to red
         answerIsWrong();
     }
     count = 0;
-    if(runningQuestion < lastQuestion){
+    if (runningQuestion < lastQuestion){
         runningQuestion++;
         renderQuestion();
-    }else{
+    } else {
         // end the quiz and show the score
         clearInterval(TIMER);
         scoreRender();
     }
+}
+
+function answerIsCorrect (){
+    document.getElementById(runningQuestion).style.backgroundColor = "#d4af37"
+}
+
+function answerIsWrong (){
+    document.getElementById(runningQuestion).style.backgroundColor = "#f00"
+}
+
+
+function scoreRender(){
+    scoreDiv.style.display = "block";
+    quiz.classList.add('hide')
+    
+    // calculate the amount of question percent answered by the user
+    const scorePerCent = Math.round(100 * score/questions.length);
+    
+    // choose the image based on the scorePerCent
+    let img = (scorePerCent >= 80) ? "img/5.png" :
+              (scorePerCent >= 60) ? "img/4.png" :
+              (scorePerCent >= 40) ? "img/3.png" :
+              (scorePerCent >= 20) ? "img/2.png" :
+              "img/1.png";
+    
+    scoreDiv.innerHTML = "<img src="+ img +">";
+    scoreDiv.innerHTML += "<p>"+ scorePerCent +"%</p>";
 }

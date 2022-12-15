@@ -177,7 +177,7 @@ export const questions =
         choiceD: "Norman Whiteside",
         correct: "D",
       },{
-        question: "What is the USAs highest finishing position at a World Cup??",
+        question: "What is the USAs highest finishing position at a World Cup?",
         choiceA: "3rd",
         choiceD: "4th",
         choiceC: "Quater Final",
@@ -191,7 +191,7 @@ export const questions =
         choiceD: "1994",
         correct: "B",
       },{
-        question: "Which nation is the only one to participate in every tournament??",
+        question: "Which nation is the only one to participate in every tournament?",
         choiceA: "France",
         choiceB: "Germany",
         choiceC: "Brazil",
