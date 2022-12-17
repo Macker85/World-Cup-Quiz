@@ -1,4 +1,4 @@
-![hero image](assets/readmeimages/hero.webp)
+![hero image]()
 
 # World Cup Quiz
 
@@ -51,14 +51,16 @@ I also designed the site with my previous project in mind so that I might link t
 
 The colours I choose were more in support of the background image and the main question area was left with some oppacity to ensure that wasn't lost. The gold is to link in with the world cup trophy and the black to make it really stand out.
 
-![hero image](assets/readmeimages/palette.webp)
+![colour scheme](./docs/color/color-scheme.png)
 
 
 ### Wireframe
 
-<!-- Due to the simplicity of the design, all devices follow the same structured wireframe, with the only major difference being that the main container for the quiz is set to 50% width on larger screens.
+Due to the straightforward design there was very little media queries needed to make this site adaptable to smaller screens, the wireframing is similar across larger screens and the 2 breakpoints I found.
 
-![wireframe](assets/readmeimages/wireframe.webp) -->
+![wireframe](docs/wireframes/wireframe1.png)
+![wireframe](docs/wireframes/wireframe2.png)
+![wireframe](docs/wireframes/wireframe3.png)
 
 
 ## Technologies

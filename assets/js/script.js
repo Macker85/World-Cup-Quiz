@@ -21,8 +21,6 @@ const gaugeUnit = gaugeWidth / questionTime;
 let TIMER;
 let score = 0;
 
-// document.addEventListener("DOMContentLoaded", function () {
-//     const buttons = document.getElementsByClassName('.buttons');
 
 function renderQuestion() {
     let q = questions[runningQuestion];
@@ -33,6 +31,7 @@ function renderQuestion() {
     answerC.innerHTML = q.choiceC;
     answerD.innerHTML = q.choiceD;
 }
+
 
 start.addEventListener("click", startQuiz)
 
@@ -54,6 +53,7 @@ function renderProgress() {
     }
 }
 
+
 function renderCounter(){
     if(count <= questionTime){
         counter.innerHTML = count;
@@ -71,6 +71,7 @@ function renderCounter(){
         }
     }
 };
+
 
 answerA.addEventListener("click", checkAnswer)
 answerB.addEventListener("click", checkAnswer)
@@ -99,9 +100,11 @@ function checkAnswer(answer){
     }
 }
 
+
 function answerIsCorrect (){
     document.getElementById(runningQuestion).style.backgroundColor = "#d4af37"
 }
+
 
 function answerIsWrong (){
     document.getElementById(runningQuestion).style.backgroundColor = "#f00"
@@ -110,6 +113,7 @@ function answerIsWrong (){
 
 function scoreRender(){
     scoreDiv.style.display = "block";
+    timer.style.display = "none";
     quiz.style.display = "none";
     quiz.classList.add('hide')
     
@@ -119,8 +123,8 @@ function scoreRender(){
     // choose the image based on the scorePerCent
     let img = (scorePerCent >= 70) ? "images/first-place.jpeg" :
               (scorePerCent >= 40) ? "images/second-place.jpeg" :
-              "./images/third-place.jpeg";
+              "images/third-place.jpeg";
     
     scoreDiv.innerHTML = "<img src="+ img +">";
-    scoreDiv.innerHTML += "<p>"+ scorePerCent +"%</p>";
+    scoreDiv.innerHTML += "<p>"+ scorePerCent +"%</p>"
 }
