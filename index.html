@@ -14,7 +14,9 @@
     <title>World Cup quiz</title>
 </head>
 <body>
-    <h1 class="heading">Test your world cup knowledge</h1>
+    <div id="heading">
+        <a href="index.html"><h1 class="heading"><i class="fa-solid fa-house"></i>Test your world cup knowledge</h1></a>
+    </div>
     <section class="question-area">
         <div id="container">
             <div id="start" class="buttons">Start Quiz!</div>
@@ -26,21 +28,20 @@
                     <div class="answer buttons" id="C" onclick="checkAnswer('C')"></div>
                     <div class="answer buttons" id="D" onclick="checkAnswer('D')"></div>
                 </div>
-                <div id="timer">
-                    <div id="counter"></div>
-                    <div id="btimeGauge"></div>
-                    <div id="timeGauge"></div>
-                </div>
                 <div id="progress"></div>
                 <div class="next-question">
                     <button id="next-question">Next Question</button>
                 </div>
+            </div>
+            <div id="timer">
+                <div id="counter"></div>
+                <div id="btimeGauge"></div>
+                <div id="timeGauge"></div>
             </div>
             <div id="score" style="display: none"></div>
         </div>
     </section>
 
     <script src="assets/js/script.js" type="module"></script>
-    <script src="assets/js/questions.js" type="module"></script>
 </body>
 </html>
