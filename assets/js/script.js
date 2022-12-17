@@ -104,6 +104,7 @@ function answerIsWrong (){
 
 function scoreRender(){
     scoreDiv.style.display = "block";
+    quiz.style.display = "none";
     quiz.classList.add('hide')
     
     // calculate the amount of question percent answered by the user
