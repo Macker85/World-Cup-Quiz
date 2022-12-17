@@ -71,11 +71,16 @@ function renderCounter(){
     }
 };
 
+answerA.addEventListener("click", checkAnswer)
+answerB.addEventListener("click", checkAnswer)
+answerC.addEventListener("click", checkAnswer)
+answerD.addEventListener("click", checkAnswer)
+
 function checkAnswer(answer){
     if ( answer == questions[runningQuestion].correct){
         // answer is correct
         score++;
-        // change progress color to green
+        // change progress color to gold
         answerIsCorrect();
     } else {
         // answer is wrong
@@ -111,11 +116,9 @@ function scoreRender(){
     const scorePerCent = Math.round(100 * score/questions.length);
     
     // choose the image based on the scorePerCent
-    let img = (scorePerCent >= 80) ? "img/5.png" :
-              (scorePerCent >= 60) ? "img/4.png" :
-              (scorePerCent >= 40) ? "img/3.png" :
-              (scorePerCent >= 20) ? "img/2.png" :
-              "img/1.png";
+    let img = (scorePerCent >= 70) ? "images/first-place.jpeg" :
+              (scorePerCent >= 40) ? "images/second-place.jpeg" :
+              "images/third-place.jpeg";
     
     scoreDiv.innerHTML = "<img src="+ img +">";
     scoreDiv.innerHTML += "<p>"+ scorePerCent +"%</p>";
