@@ -40,6 +40,7 @@ function startQuiz() {
 start.style.display = "none";
 renderQuestion();
 quiz.style.display = "block";
+timer.style.display = "block";
 renderProgress();
 renderCounter();
 TIMER = setInterval(renderCounter, 1000);
@@ -77,7 +78,7 @@ answerC.addEventListener("click", checkAnswer)
 answerD.addEventListener("click", checkAnswer)
 
 function checkAnswer(answer){
-    if ( answer == questions[runningQuestion].correct){
+    if ( answer === questions[runningQuestion].correct){
         // answer is correct
         score++;
         // change progress color to gold
@@ -118,7 +119,7 @@ function scoreRender(){
     // choose the image based on the scorePerCent
     let img = (scorePerCent >= 70) ? "images/first-place.jpeg" :
               (scorePerCent >= 40) ? "images/second-place.jpeg" :
-              "images/third-place.jpeg";
+              "./images/third-place.jpeg";
     
     scoreDiv.innerHTML = "<img src="+ img +">";
     scoreDiv.innerHTML += "<p>"+ scorePerCent +"%</p>";

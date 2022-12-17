@@ -41,17 +41,17 @@ The interactive code was developed in Javascript and the interface was developed
  
 ## Design
 
-<!-- This game was designed with a <strong>mobile first</strong> approach. The CSS was built to be compatible with smaller screen sizes first, and was scaled for larger screens where appropriate using media queries.
+This game was designed to feel as it plays with the background image making a competitive feel to the quiz and also that it is effective on most screen sizes, the colours were chosen to support the thyme of the game being the World Cup with gold for the cup and green for a football pitch.
 
-The game is designed to be as intuitive as possible, with clear distinction for interactive elements via color scheme & hover effects.
+The game is designed with clear distinction for interactive elements via color scheme & hover effects, making it easier for the user to navigate the site and have a familiar feel to the format.
 
-It is designed with each section of the game structured in its own div within the HTML, to allow for easier readability, scalability and de-bugging. -->
+I also designed the site with my previous project in mind so that I might link them in the future.
 
 ### Color Scheme
 
-<!-- For this project, I decided to keep the color scheme pretty simple. I felt the below colors fulfilled what I required, with the expection of the 'correct/incorrect' colors shown on the question result screen. In this specific circumstance I opted for more primary colors to best portray the result.
+The colours I choose were more in support of the background image and the main question area was left with some oppacity to ensure that wasn't lost. The gold is to link in with the world cup trophy and the black to make it really stand out.
 
-![hero image](assets/readmeimages/palette.webp) -->
+![hero image](assets/readmeimages/palette.webp)
 
 
 ### Wireframe
@@ -164,8 +164,8 @@ Lighhouse score:
 | ------------- |:-------------|
 | Link questions JavaScript to script JavaScript not reading | Change file from .js to .mjs and export questions as 'Const' | 
 | Progress bar and timer not showing on lauched screen | Typo in HTML |
-<!-- | If no answer was selected on the final question, nothing would happen | Yes - created an if/else to check if an answer was selected after timer runs out      | 
-| Timer did not function upon selecting new game      | Yes - Reloaded entire page instead of calling function | -->
+| Timer loading on start screen | Set display to none in HTML and load display as block in JS when rendering start quiz      | 
+| Score image not loading apon completion      | ??? |
 
  ## Unresolved Bugs
 
