@@ -210,6 +210,8 @@ To deploy to GitHub, I completed the following steps
 ## Credits
 
 - The ilumni on Slack
-- Stack Overflow
 - Jack, my mentor
 - Code Explained - YouTube videos
+- Brian design - YouTube videos
+- W3schools.com
+- Stack Overflow
