@@ -79,7 +79,7 @@ answerC.addEventListener("click", checkAnswer)
 answerD.addEventListener("click", checkAnswer)
 
 function checkAnswer(answer){
-    if ( answer === questions[runningQuestion].correct){
+    if (answer == questions[runningQuestion].correct){
         // answer is correct
         score++;
         // change progress color to gold
@@ -101,13 +101,12 @@ function checkAnswer(answer){
 }
 
 
-function answerIsCorrect (){
-    document.getElementById(runningQuestion).style.backgroundColor = "#d4af37"
-}
-
-
 function answerIsWrong (){
     document.getElementById(runningQuestion).style.backgroundColor = "#f00"
+}
+
+function answerIsCorrect (){
+    document.getElementById(runningQuestion).style.backgroundColor = "#d4af37"
 }
 
 
@@ -121,9 +120,9 @@ function scoreRender(){
     const scorePerCent = Math.round(100 * score/questions.length);
     
     // choose the image based on the scorePerCent
-    let img = (scorePerCent >= 70) ? "images/first-place.jpeg" :
-              (scorePerCent >= 40) ? "images/second-place.jpeg" :
-              "images/third-place.jpeg";
+    let img = (scorePerCent >= 70) ? "../assets/images/firstplace.gif" :
+              (scorePerCent >= 40) ? "images/secondplace.webp" :
+              "../assets/images/thirdplace.gif";
     
     scoreDiv.innerHTML = "<img src="+ img +">";
     scoreDiv.innerHTML += "<p>"+ scorePerCent +"%</p>"
