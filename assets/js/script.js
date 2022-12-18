@@ -1,5 +1,7 @@
+//importing questions from questions file
 import { questions } from "./questions.mjs";
 
+//getting elements from the DOM
 const start = document.getElementById("start");
 const quiz = document.getElementById("quiz");
 const question = document.getElementById("question");
@@ -9,11 +11,12 @@ const answerC = document.getElementById("C");
 const answerD = document.getElementById("D");
 const counter = document.getElementById("counter");
 const timer = document.getElementById("timer");
-const timeGauge = document.getElementById("timeGauge");
+const timeDisplay = document.getElementById("timedisplay");
 const scoreDiv = document.getElementById("score");
 const progress = document.getElementById("progress");
 const playAgain = document.getElementById("play-again");
 
+//setting variables
 const lastQuestion = questions.length - 1;
 let runningQuestion = 0;
 let count = 0;
@@ -24,19 +27,10 @@ let TIMER;
 let score = 0;
 
 
-function renderQuestion() {
-    let q = questions[runningQuestion];
-
-    question.innerHTML = "<p>"+ q.question +"</p>";
-    answerA.innerHTML = q.choiceA;
-    answerB.innerHTML = q.choiceB;
-    answerC.innerHTML = q.choiceC;
-    answerD.innerHTML = q.choiceD;
-}
-
-
+//event listener to start quiz
 start.addEventListener("click", startQuiz);
 
+//function called to start quiz
 function startQuiz() {
 start.style.display = "none";
 renderQuestion();
@@ -48,6 +42,19 @@ TIMER = setInterval(renderCounter, 1000);
 };
 
 
+//function called to load questions
+function renderQuestion() {
+    let q = questions[runningQuestion];
+
+    question.innerHTML = "<p>"+ q.question +"</p>";
+    answerA.innerHTML = q.choiceA;
+    answerB.innerHTML = q.choiceB;
+    answerC.innerHTML = q.choiceC;
+    answerD.innerHTML = q.choiceD;
+}
+
+
+//function called to load progress bar
 function renderProgress() {
     for(let qIndex = 0; qIndex <= lastQuestion; qIndex++)
     {
@@ -56,10 +63,11 @@ function renderProgress() {
 }
 
 
+//function called to load timer
 function renderCounter(){
     if(count <= questionTime){
         counter.innerHTML = count;
-        timeGauge.style.width = count * gaugeUnit + "px";
+        timeDisplay.style.width = count * gaugeUnit + "px";
         count++;
     } else {
         count = 0;
@@ -75,20 +83,18 @@ function renderCounter(){
 }
 
 
+//event listeners for answer options
 answerA.addEventListener("click", checkAnswer);
 answerB.addEventListener("click", checkAnswer);
 answerC.addEventListener("click", checkAnswer);
 answerD.addEventListener("click", checkAnswer);
 
+//function called to check answer selected
 function checkAnswer(answer){
     if (answer == questions[runningQuestion].correct){
-        // answer is correct
         score++;
-        // change progress color to gold
         answerIsCorrect();
     } else {
-        // answer is wrong
-        // change progress color to red
         answerIsWrong();
     }
     count = 0;
@@ -96,22 +102,24 @@ function checkAnswer(answer){
         runningQuestion++;
         renderQuestion();
     } else {
-        // end the quiz and show the score
         clearInterval(TIMER);
         scoreRender();
     }
 }
 
 
+//function called for incorrect answer
 function answerIsWrong (){
     document.getElementById(runningQuestion).style.backgroundColor = "#f00";
 }
 
+//function called for correct answer
 function answerIsCorrect (){
     document.getElementById(runningQuestion).style.backgroundColor = "#d4af37";
 }
 
 
+//function called for final score
 function scoreRender(){
     scoreDiv.style.display = "block";
     playAgain.style.display = "flex";
@@ -131,6 +139,8 @@ function scoreRender(){
     scoreDiv.innerHTML += "<p>"+ scorePerCent +"%</p>";
 }
 
+
+//link for 'play-again' button to go back to the start
 playAgain.onclick = () => {
     window.location.reload();
 };

@@ -118,14 +118,14 @@ html {
     font-size: 3em;
 }
 
-#btimeGauge {
+#btimedisplay {
     width : 150px;
     height : 10px;
     border-radius: 10px;
     background-color: #d3d3d3;
     margin-left : 25px;
 }
-#timeGauge {
+#timedisplay {
     height : 10px;
     border-radius: 10px;
     background-color: #d4af37;;
@@ -141,10 +141,10 @@ html {
 }
 
 .prog {
+    display: inline-block;
+    border: 1px solid #000;
     width : 10px;
     height : 10px;
-    border: 1px solid #000;
-    display: inline-block;
     border-radius: 50%;
     margin-left : 5px;
     margin-right : 5px;
