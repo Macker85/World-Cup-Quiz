@@ -15,6 +15,8 @@ const timeDisplay = document.getElementById("timedisplay");
 const scoreDiv = document.getElementById("score");
 const progress = document.getElementById("progress");
 const playAgain = document.getElementById("play-again");
+const user = document.getElementById("load-user");
+const usern = document.getElementById("username");
 
 //setting variables
 const lastQuestion = questions.length - 1;
@@ -25,6 +27,15 @@ const gaugeWidth = 150;
 const gaugeUnit = gaugeWidth / questionTime;
 let TIMER;
 let score = 0;
+let username;
+
+
+//function called to enter username and display message on quiz
+document.getElementById("start").onclick = function(){
+    username = document.getElementById("user-input").value;
+    console.log(username);
+    user.innerHTML = "Good luck " + username;
+}
 
 
 //event listener to start quiz
@@ -33,9 +44,11 @@ start.addEventListener("click", startQuiz);
 //function called to start quiz
 function startQuiz() {
 start.style.display = "none";
+usern.style.display = "none";
 renderQuestion();
 quiz.style.display = "block";
 timer.style.display = "block";
+user.style.display = "block";
 renderProgress();
 renderCounter();
 TIMER = setInterval(renderCounter, 1000);
