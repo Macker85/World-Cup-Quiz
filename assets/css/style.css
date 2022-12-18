@@ -236,4 +236,12 @@ html {
     .question-area {
         max-height: fit-content;
     }
+
+    #next-question {
+        width: auto;
+    }
+
+    .play-again {
+        width: auto;
+    }
 }
