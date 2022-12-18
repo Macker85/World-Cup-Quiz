@@ -8,10 +8,11 @@ const answerB = document.getElementById("B");
 const answerC = document.getElementById("C");
 const answerD = document.getElementById("D");
 const counter = document.getElementById("counter");
+const timer = document.getElementById("timer");
 const timeGauge = document.getElementById("timeGauge");
 const scoreDiv = document.getElementById("score");
 const progress = document.getElementById("progress");
-const playAgain = document.getElementById("play-again")
+const playAgain = document.getElementById("play-again");
 
 const lastQuestion = questions.length - 1;
 let runningQuestion = 0;
@@ -34,7 +35,7 @@ function renderQuestion() {
 }
 
 
-start.addEventListener("click", startQuiz)
+start.addEventListener("click", startQuiz);
 
 function startQuiz() {
 start.style.display = "none";
@@ -44,7 +45,7 @@ timer.style.display = "block";
 renderProgress();
 renderCounter();
 TIMER = setInterval(renderCounter, 1000);
-}
+};
 
 
 function renderProgress() {
@@ -59,25 +60,25 @@ function renderCounter(){
     if(count <= questionTime){
         counter.innerHTML = count;
         timeGauge.style.width = count * gaugeUnit + "px";
-        count++
+        count++;
     } else {
         count = 0;
         answerIsWrong();
         if(runningQuestion < lastQuestion){
-            runningQuestion++
+            runningQuestion++;
             renderQuestion();
         }else{
             clearInterval(TIMER);
             scoreRender();
         }
     }
-};
+}
 
 
-answerA.addEventListener("click", checkAnswer)
-answerB.addEventListener("click", checkAnswer)
-answerC.addEventListener("click", checkAnswer)
-answerD.addEventListener("click", checkAnswer)
+answerA.addEventListener("click", checkAnswer);
+answerB.addEventListener("click", checkAnswer);
+answerC.addEventListener("click", checkAnswer);
+answerD.addEventListener("click", checkAnswer);
 
 function checkAnswer(answer){
     if (answer == questions[runningQuestion].correct){
@@ -103,11 +104,11 @@ function checkAnswer(answer){
 
 
 function answerIsWrong (){
-    document.getElementById(runningQuestion).style.backgroundColor = "#f00"
+    document.getElementById(runningQuestion).style.backgroundColor = "#f00";
 }
 
 function answerIsCorrect (){
-    document.getElementById(runningQuestion).style.backgroundColor = "#d4af37"
+    document.getElementById(runningQuestion).style.backgroundColor = "#d4af37";
 }
 
 
@@ -127,7 +128,7 @@ function scoreRender(){
               "../assets/images/thirdplace.gif";
     
     scoreDiv.innerHTML = "<img src="+ img +">";
-    scoreDiv.innerHTML += "<p>"+ scorePerCent +"%</p>"
+    scoreDiv.innerHTML += "<p>"+ scorePerCent +"%</p>";
 }
 
 playAgain.onclick = () => {
