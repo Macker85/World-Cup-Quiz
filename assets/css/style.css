@@ -150,20 +150,6 @@ html {
     margin-right : 5px;
 }
 
-#score {
-    margin-top: 15%;
-    display: none;
-}
-
-#score p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2em;
-    font-weight: bold;
-    text-align: center;
-}
-
 #next-question {
     justify-content: center;
     align-items: center;
@@ -184,6 +170,47 @@ html {
     border : 2px solid #d4af37;
 }
 
+/**--- reveal score ---**/
+
+#score {
+    margin-top: 15%;
+    display: none;
+}
+
+#score p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+#restart {
+    position: absolute;
+    bottom: 20%;
+}
+
+#play-again {
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    width: 200px;
+    height: 100px;
+    border : 2px solid #000000;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+    color : #000000;
+    background-color: #d4af37;
+}
+
+#play-again:hover {
+    color : #d4af37;
+    background-color: #000000;
+    border : 2px solid #d4af37;
+}
+
 /** Media queries **/
 
 @media screen and (max-width: 860px){
@@ -197,10 +224,6 @@ html {
 
     #progress {
         display: block;
-    }
-
-    #score {
-
     }
 }
 

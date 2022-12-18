@@ -11,6 +11,7 @@ const counter = document.getElementById("counter");
 const timeGauge = document.getElementById("timeGauge");
 const scoreDiv = document.getElementById("score");
 const progress = document.getElementById("progress");
+const playAgain = document.getElementById("play-again")
 
 const lastQuestion = questions.length - 1;
 let runningQuestion = 0;
@@ -112,9 +113,10 @@ function answerIsCorrect (){
 
 function scoreRender(){
     scoreDiv.style.display = "block";
+    playAgain.style.display = "flex";
     timer.style.display = "none";
     quiz.style.display = "none";
-    quiz.classList.add('hide')
+    quiz.classList.add('hide');
     
     // calculate the amount of question percent answered by the user
     const scorePerCent = Math.round(100 * score/questions.length);
@@ -127,3 +129,7 @@ function scoreRender(){
     scoreDiv.innerHTML = "<img src="+ img +">";
     scoreDiv.innerHTML += "<p>"+ scorePerCent +"%</p>"
 }
+
+playAgain.onclick = () => {
+    window.location.reload();
+};
