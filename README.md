@@ -75,61 +75,61 @@ The technologies used in this project were HTML, CSS and JavaScript.
 
 ## User Stories
 
-<!-- | User story        | Implementation |     
-| ------------- |:-------------|
-| User wants to be able to toggle audio        | Have added button to turn audiio on/off |     
-| User would like to choose a quiz type to be tested on different knowledge       | Added multiple quiz options |     
-| User would like to receive costant feedback on progress  | Add overall score to question screen, and add previous questions score to result screen |     
-| User would like some instructions, so that they can understand how to play the game.| Add a how to play button to the welcome screen, which shows the user instructions upon clicking |      -->
+### As a user I want to:
+  - Have a clear idea what to expect from this quiz.
+  - Enter my name and have it appear throughout the quiz.
+  - Activate the quiz when I am ready.
+  - Asnwer questions related to the world cup.
+  - Have a way to navigate back to the start if I wish to start again.
+  - Know how much time I have for the question and how many questions I will be asked.
+  - See my final score and have the option to play again to beat it.
 
 ## Features
 
-### Welcome Section
+### Header
 
-<!-- The welcome section is the screen the end user is presented with on page load. 
+The header clarifies for the user what to expect and will be consistant on each part of the quiz.
 
-It provides the user with a breif description of the game, along with a start button, and a how to play button. It also contains a logo which redirects to the welcome screen and a toggle for audio, both of which are present on any suqsequent screens.
+It provides the user with a breif description of the game, and will also act as a navbar, this will bring the user back to the start of the quiz if they wish and the cursor will change to show a clickable option. I also added a home icon which is also clickable to support the message.
 
-![Welcome screen](assets/readmeimages/welcome-screen.webp) -->
+![Header](docs/features/feature1.png)
 
-### Choose Game screen
+### Enter name
 
-<!-- The choose game screen allows the user to choose which quiz type they would like to play (General Knowledge/Music). 
+This will allow you to enter your name and have it appear throughout the quiz making it a more personal experience.
 
-![Choose Game](assets/readmeimages/choose-game.webp) -->
+![Enter name](docs/features/feature2.png)
+![Good luck user](docs/features/feature2.1.png)
 
-### How to Play screen
+### Start button
 
-<!-- The how to play screen provides the user with the guidelines of the game, along with a button to return to the welcome screen.
+The how to play screen provides the user with the guidelines of the game, along with a button to return to the welcome screen.
 
-![How To Play](assets/readmeimages/how-to-play.webp) -->
+![Start button](docs/features/feature3.png)
 
 ### Question screen
 
-<!-- The question screen contains the current question number. It also contains a countdown bar, which decreases every second for 10 seconds. It also contains the current question, along with 4 buttons for each answer.
-Finally, it containes the players current overall score, and the total possible score. -->
+The question screen will show your current question, remaining questions amount and progres so far.
 
-<!-- ![Question Screen](assets/readmeimages/question-screen.webp) -->
+![Question Screen](docs/features/feature4.png)
 
-### Correct/Incorrect Answer screen
+### Timer
 
-<!-- The correct answer screen displays the selected answer, and the number of seconds it took to select this ansswer. It also displays the number of points added to the overall score. Finally, it displays a button which can be selected to continue to the next question. -->
+The timer will show a count of seconds passing and also a progress bar for how much time is left.
 
-<!-- ![Correct Answer](assets/readmeimages/correct-answer.webp)
+![Timer](docs/features/feature5.png)
 
-The incorrect answer screen simply displays the incorrect selected answer, along with a button to continue to the nect question.
+### Final score % with animation
 
-![Incorrect Answer](assets/readmeimages/incorrect-answer.webp) -->
+This screen will appear after the questions have been answered with 3 different animated gifs depending on your score. Your score will also show up as a percentage.
 
-### Timeout Screen
+![Score with GIF](docs/features/feature6.png)
 
-<!-- The timeout screen displays if 10 seconds have passed without an answer being selected. This follows the same template as the incorrect answer screen but just contains the text Times Up! along wit a button to proceed. -->
+### Play again button
 
-### Game over screen
+This button will bring the user back to the start so they can take the quiz again.
 
-<!-- This screen displays the result of their final answer, their overall score, and a button to start a new game.
-
-![Game Over](assets/readmeimages/game-over.webp) -->
+![Play again](docs/features/feature6.1.png)
 
 ## Testing
 

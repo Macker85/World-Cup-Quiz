@@ -18,6 +18,7 @@ const playAgain = document.getElementById("play-again");
 const user = document.getElementById("load-user");
 const usern = document.getElementById("username");
 
+
 //setting variables
 const lastQuestion = questions.length - 1;
 let runningQuestion = 0;
