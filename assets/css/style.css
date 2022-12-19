@@ -72,11 +72,11 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10%;
 }
 
 #container {
-    display: flex;
+    display: grid;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 50%;
@@ -205,11 +205,6 @@ html {
     font-size: 2em;
     font-weight: bold;
     text-align: center;
-}
-
-#restart {
-    position: absolute;
-    bottom: 20%;
 }
 
 #play-again {
