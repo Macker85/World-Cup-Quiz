@@ -103,7 +103,9 @@ answerC.addEventListener("click", checkAnswer);
 answerD.addEventListener("click", checkAnswer);
 
 //function called to check answer selected
-function checkAnswer(answer){
+function checkAnswer(event){
+    console.log(event.target.id)
+    const answer = event.target.id;     
     if (answer == questions[runningQuestion].correct){
         score++;
         answerIsCorrect();
@@ -145,7 +147,7 @@ function scoreRender(){
     
     // choose the image based on the scorePerCent
     let img = (scorePerCent >= 70) ? "../assets/images/firstplace.gif" :
-              (scorePerCent >= 40) ? "images/secondplace.webp" :
+              (scorePerCent >= 40) ? "../assets/images/secondplace.webp" :
               "../assets/images/thirdplace.gif";
     
     scoreDiv.innerHTML = "<img src="+ img +">";
