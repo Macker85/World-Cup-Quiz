@@ -48,7 +48,7 @@ usern.style.display = "none";
 renderQuestion();
 quiz.style.display = "block";
 timer.style.display = "block";
-user.style.display = "block";
+user.style.display = "flex";
 renderProgress();
 renderCounter();
 TIMER = setInterval(renderCounter, 1000);
