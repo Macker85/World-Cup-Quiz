@@ -1,4 +1,4 @@
-![hero image]()
+![hero image](/docs/hero/hero-image.png)
 
 # World Cup Quiz
 
@@ -132,9 +132,6 @@ This button will bring the user back to the start so they can take the quiz agai
 
 ![Play again](docs/features/feature6.1.png)
 
-## Testing user stories
-
-
 
 ## Testing
 
@@ -212,9 +209,19 @@ To deploy to GitHub, I completed the following steps
 
 ## Credits
 
+### Media
+
+- Background image - Pixaby
+- Gif first-place - tenor.com
+- Gif second-place - Gifer.com
+- Gif third-place - tenor.com
+
+### Acknowledgements
+
 - The ilumni on Slack
 - Jack, my mentor
 - Code Explained - YouTube videos
 - Brian design - YouTube videos
+- BroCode - YouTube videos
 - W3schools.com
 - Stack Overflow

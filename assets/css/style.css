@@ -180,26 +180,6 @@ html {
     font-weight: bold;
 }
 
-/* #next-question {
-    justify-content: center;
-    align-items: center;
-    font-size: 2em;
-    width: 200px;
-    height: 100px;
-    border : 2px solid #000000;
-    border-radius: 20px;
-    text-align: center;
-    cursor: pointer;
-    color : #000000;
-    background-color: #d4af37;
-}
-
-#next-question:hover {
-    color : #d4af37;
-    background-color: #000000;
-    border : 2px solid #d4af37;
-} */
-
 /**--- reveal score ---**/
 
 #score {

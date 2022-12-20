@@ -56,17 +56,17 @@ TIMER = setInterval(renderCounter, 1000);
 
 
 //function to randomise questions
-let questionShuffle = function(questions){
-    let newPos;
-    let temp;
-    for (let i = questions.length - 1; i > 0; i--){
-        newPos = Math.floor(Math.random() * (i + 1));
-        temp = questions[i];
-        questions [i] = questions[newPos];
-        questions[newPos] = temp;
-    }
-    return questions;
-};
+// let questionShuffle = function(questions){
+//     let newPos;
+//     let temp;
+//     for (let i = questions.length - 1; i > 0; i--){
+//         newPos = Math.floor(Math.random() * (i + 1));
+//         temp = questions[i];
+//         questions [i] = questions[newPos];
+//         questions[newPos] = temp;
+//     }
+//     return questions;
+// };
 
 
 //function called to load questions
@@ -129,6 +129,7 @@ function checkAnswer(event){
     if (runningQuestion < lastQuestion){
         runningQuestion++;
         renderQuestion();
+        questionShuffle();
     } else {
         clearInterval(TIMER);
         scoreRender();
