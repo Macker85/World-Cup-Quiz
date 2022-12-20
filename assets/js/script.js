@@ -56,17 +56,17 @@ TIMER = setInterval(renderCounter, 1000);
 
 
 //function to randomise questions
-let questionShuffle = function(questions){
-    let newPos;
-    let temp;
-    for (let i = questions.length - 1; i > 0; i--){
-        newPos = Math.floor(Math.random() * (i + 1));
-        temp = questions[i];
-        questions [i] = questions[newPos];
-        questions[newPos] = temp;
-    }
-    return questions;
-};
+// let questionShuffle = function(questions){
+//     let newPos;
+//     let temp;
+//     for (let i = questions.length - 1; i > 0; i--){
+//         newPos = Math.floor(Math.random() * (i + 1));
+//         temp = questions[i];
+//         questions [i] = questions[newPos];
+//         questions[newPos] = temp;
+//     }
+//     return questions;
+// };
 
 
 //function called to load questions
@@ -160,9 +160,9 @@ function scoreRender(){
     const scorePerCent = Math.round(100 * score/questions.length);
     
     // choose the image based on the scorePerCent
-    let img = (scorePerCent >= 70) ? "../assets/images/first-place.gif" :
-              (scorePerCent >= 40) ? "../assets/images/second-place.webp" :
-              "../assets/images/third-place.gif";
+    let img = (scorePerCent >= 70) ? "./assets/images/firstplace.gif" :
+              (scorePerCent >= 40) ? "./assets/images/secondplace.webp" :
+              "./assets/images/thirdplace.gif";
     
     scoreDiv.innerHTML = "<img src="+ img +">";
     scoreDiv.innerHTML += "<p>"+ scorePerCent +"%</p>";
