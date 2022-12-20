@@ -31,6 +31,7 @@ The interactive code was developed in Javascript and the interface was developed
     - [Timeout Screen](#timeout-screen)
     - [Game over Screen](#game-over-screen)
   - [Testing](#testing)
+  - [Testing user stories](#testing-user-stories)
   - [Resolved Bugs](#resolved-bugs)
   - [Unresolved Bugs](#unresolved-bugs)
   - [Features I would like to Implement](#features-I-would-like-to-implement)
@@ -76,17 +77,17 @@ The technologies used in this project were HTML, CSS and JavaScript.
 ## User Stories
 
 ### As a user I want to:
-  - Have a clear idea what to expect from this quiz.
-  - Enter my name and have it appear throughout the quiz.
-  - Activate the quiz when I am ready.
-  - Asnwer questions related to the world cup.
-  - Have a way to navigate back to the start if I wish to start again.
-  - Know how much time I have for the question and how many questions I will be asked.
-  - See my final score and have the option to play again to beat it.
+  - 1.Have a clear idea what to expect from this quiz.
+  - 2.Enter my name and have it appear throughout the quiz.
+  - 3.Activate the quiz when I am ready.
+  - 4.Ansnwer questions related to the world cup.
+  - 5.Have a way to navigate back to the start if I wish to start again.
+  - 6.Know how much time I have for the question and how many questions I will be asked.
+  - 7.See my final score and have the option to play again to beat it.
 
 ## Features
 
-### Header
+### Header - User story 1
 
 The header clarifies for the user what to expect and will be consistant on each part of the quiz.
 
@@ -94,32 +95,32 @@ It provides the user with a breif description of the game, and will also act as 
 
 ![Header](docs/features/feature1.png)
 
-### Enter name
+### Enter name - User story 2
 
 This will allow you to enter your name and have it appear throughout the quiz making it a more personal experience.
 
 ![Enter name](docs/features/feature2.png)
 ![Good luck user](docs/features/feature2.1.png)
 
-### Start button
+### Start button - User story 3
 
 The how to play screen provides the user with the guidelines of the game, along with a button to return to the welcome screen.
 
 ![Start button](docs/features/feature3.png)
 
-### Question screen
+### Question screen - User story 4
 
 The question screen will show your current question, remaining questions amount and progres so far.
 
 ![Question Screen](docs/features/feature4.png)
 
-### Timer
+### Timer - User story 6
 
 The timer will show a count of seconds passing and also a progress bar for how much time is left.
 
 ![Timer](docs/features/feature5.png)
 
-### Final score % with animation
+### Final score % with animation - User story 7
 
 This screen will appear after the questions have been answered with 3 different animated gifs depending on your score. Your score will also show up as a percentage.
 
@@ -131,22 +132,24 @@ This button will bring the user back to the start so they can take the quiz agai
 
 ![Play again](docs/features/feature6.1.png)
 
+## Testing user stories
+
+
+
 ## Testing
 
-<!-- This website was tested in the following instances:
+This website was tested in the following instances:
  <ul>
-  <li>Windows PC running Google Chrome Version 105.0.5195.127 (Official Build) (64-bit)
-</li>
-<li>MacBook Pro running Google Chrome (version unknown)</li>
-<li>Android smartphone running Google Chrome Version 106.0.5249.79</li>
+<li>MacBook Air running Google Chrome, FireFox and Safari</li>
+<li>Android smartphone running Google Chrome Version</li>
 <li>iPhone running Safari</li>
 </ul>
 
 W3C Validation:
 
-![W3C](assets/readmeimages/w3c.webp) -->
+<!-- ![W3C](assets/readmeimages/w3c.webp) -->
 
-<!-- Jigsaw Validation:
+ <!-- Jigsaw Validation:
 
 ![Jigsaw](assets/readmeimages/css.webp)
 
@@ -156,7 +159,7 @@ Jshint validator was used to validate the JavaScript code.
 
 Lighhouse score:
 
-![LightHouse Score](assets/readmeimages/lighthouse.webp) --> -->
+![LightHouse Score](assets/readmeimages/lighthouse.webp) -->
 
 
 ## Resolved Bugs
@@ -167,7 +170,8 @@ Lighhouse score:
 | Link questions JavaScript to script JavaScript not reading | Change file from .js to .mjs and export questions as 'Const' | 
 | Progress bar and timer not showing on lauched screen | Typo in HTML |
 | Timer loading on start screen | Set display to none in HTML and load display as block in JS when rendering start quiz      | 
-| Score image not loading apon completion      | ??? |
+| Score image not loading apon completion      | File path fixed |
+| Timer not centering in screen      | ??? |
 
  ## Unresolved Bugs
 
@@ -176,11 +180,10 @@ Lighhouse score:
 
 ## Features I would like to implement
 
-<!-- - Option for different game difficulty (Less time to answer)
-- Advanced sound control (music on/off and/or sound effects on/off)
-- More quiz games 
-- Question randomization
-- A leaderboard (when the skills for this have been learned) -->
+- Randomise questions to add incentive to replay
+- Freeze question on answer to show correct answer and 'next-question' button
+- Add sounds
+- A leaderboard to make it more competitive
 
 
 ## Deployment 

@@ -34,7 +34,6 @@ let username;
 //function called to enter username and display message on quiz
 document.getElementById("start").onclick = function(){
     username = document.getElementById("user-input").value;
-    console.log(username);
     user.innerHTML = "Good luck " + username;
 }
 
@@ -53,6 +52,20 @@ user.style.display = "flex";
 renderProgress();
 renderCounter();
 TIMER = setInterval(renderCounter, 1000);
+};
+
+
+//function to randomise questions
+let questionShuffle = function(questions){
+    let newPos;
+    let temp;
+    for (let i = questions.length - 1; i > 0; i--){
+        newPos = Math.floor(Math.random() * (i + 1));
+        temp = questions[i];
+        questions [i] = questions[newPos];
+        questions[newPos] = temp;
+    }
+    return questions;
 };
 
 
@@ -105,7 +118,6 @@ answerD.addEventListener("click", checkAnswer);
 
 //function called to check answer selected
 function checkAnswer(event){
-    console.log(event.target.id)
     const answer = event.target.id;     
     if (answer == questions[runningQuestion].correct){
         score++;

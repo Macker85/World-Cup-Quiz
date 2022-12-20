@@ -170,6 +170,16 @@ html {
     margin-right: 5px;
 }
 
+#incorrect {
+    color: red;
+    font-weight: bold;
+}
+
+#correct {
+    color: #d4af37;
+    font-weight: bold;
+}
+
 /* #next-question {
     justify-content: center;
     align-items: center;
