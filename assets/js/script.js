@@ -35,7 +35,7 @@ let username;
 document.getElementById("start").onclick = function(){
     username = document.getElementById("user-input").value;
     user.innerHTML = "Good luck " + username;
-}
+};
 
 
 //event listener to start quiz
@@ -52,21 +52,21 @@ user.style.display = "flex";
 renderProgress();
 renderCounter();
 TIMER = setInterval(renderCounter, 1000);
-};
+}
 
 
 //function to randomise questions
-// let questionShuffle = function(questions){
-//     let newPos;
-//     let temp;
-//     for (let i = questions.length - 1; i > 0; i--){
-//         newPos = Math.floor(Math.random() * (i + 1));
-//         temp = questions[i];
-//         questions [i] = questions[newPos];
-//         questions[newPos] = temp;
-//     }
-//     return questions;
-// };
+let questionShuffle = function(questions){
+    let newPos;
+    let temp;
+    for (let i = questions.length - 1; i > 0; i--){
+        newPos = Math.floor(Math.random() * (i + 1));
+        temp = questions[i];
+        questions [i] = questions[newPos];
+        questions[newPos] = temp;
+    }
+    return questions;
+};
 
 
 //function called to load questions

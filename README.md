@@ -142,19 +142,19 @@ This website was tested in the following instances:
 <li>iPhone running Safari</li>
 </ul>
 
-W3C Validation:
+W3C CSS Validation:
 
-![W3C](assets/readmeimages/w3c.webp) -->
+![W3C](docs/validation/CSS-validation.png)
 
- Jigsaw Validation:
+ W3C HTML Validation:
 
-![Jigsaw](assets/readmeimages/css.webp)
+![W3C](docs/validation/HTML-validation.png)
 
 Jshint validator was used to validate the JavaScript code.
 
-![Jshint](assets/readmeimages/jshint.webp)
+Showing no errors for either JavaScript file.
 
-Lighhouse score:
+Lighthouse score:
 
 ![LightHouse Score](docs/Lighthouse/lighthouse1.png)
 ![LightHouse Score](docs/Lighthouse/lighthouse2.png)
