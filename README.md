@@ -144,9 +144,9 @@ This website was tested in the following instances:
 
 W3C Validation:
 
-<!-- ![W3C](assets/readmeimages/w3c.webp) -->
+![W3C](assets/readmeimages/w3c.webp) -->
 
- <!-- Jigsaw Validation:
+ Jigsaw Validation:
 
 ![Jigsaw](assets/readmeimages/css.webp)
 
@@ -156,7 +156,8 @@ Jshint validator was used to validate the JavaScript code.
 
 Lighhouse score:
 
-![LightHouse Score](assets/readmeimages/lighthouse.webp) -->
+![LightHouse Score](docs/Lighthouse/lighthouse1.png)
+![LightHouse Score](docs/Lighthouse/lighthouse2.png)
 
 
 ## Resolved Bugs
