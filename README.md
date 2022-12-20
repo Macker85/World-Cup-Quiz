@@ -31,7 +31,6 @@ The interactive code was developed in Javascript and the interface was developed
     - [Timeout Screen](#timeout-screen)
     - [Game over Screen](#game-over-screen)
   - [Testing](#testing)
-  - [Testing user stories](#testing-user-stories)
   - [Resolved Bugs](#resolved-bugs)
   - [Unresolved Bugs](#unresolved-bugs)
   - [Features I would like to Implement](#features-I-would-like-to-implement)
@@ -52,7 +51,7 @@ I also designed the site with my previous project in mind so that I might link t
 
 The colours I choose were more in support of the background image and the main question area was left with some oppacity to ensure that wasn't lost. The gold is to link in with the world cup trophy and the black to make it really stand out.
 
-![colour scheme](./docs/color/color-scheme.png)
+![color scheme](./docs/color/color-scheme.png)
 
 
 ### Wireframe
