@@ -30,7 +30,7 @@ html {
 }
 
 #user-input {
-    height: 20px;
+    height: 2rem;
     border-radius: 10px;
 }
 
@@ -39,7 +39,7 @@ html {
     align-items: center;
     text-decoration: underline;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.2rem;
     color: #d4af37;
     margin-bottom: 10px;
 }
@@ -48,7 +48,7 @@ html {
 
 .fa-house {
     color: #d4af37;
-    font-size: 30px;
+    font-size: 1.7rem;
 }
 
 /**--- body ---**/
@@ -83,7 +83,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2em;
+    font-size: 2rem;
     width: 200px;
     height: 150px;
     border: 2px solid #000000;
@@ -133,7 +133,7 @@ html {
 }
 
 #counter {
-    font-size: 3em;
+    font-size: 3rem;
 }
 
 #btimedisplay {
@@ -196,7 +196,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2em;
+    font-size: 2rem;
     font-weight: bold;
     text-align: center;
 }
@@ -251,7 +251,7 @@ html {
     }
 
     .fa-house {
-        font-size: 15px;
+        font-size: 1.5rem;
     }
 
     .question-area {
