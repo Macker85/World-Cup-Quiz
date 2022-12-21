@@ -129,7 +129,6 @@ function checkAnswer(event){
     if (runningQuestion < lastQuestion){
         runningQuestion++;
         renderQuestion();
-        questionShuffle();
     } else {
         clearInterval(TIMER);
         scoreRender();

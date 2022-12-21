@@ -168,6 +168,13 @@ html {
     margin-right: 5px;
 }
 
+#progress-def {
+    background: #000;
+    max-width: 200px;
+    margin: auto;
+    border-radius: 10px;
+}
+
 #incorrect {
     color: red;
     font-weight: bold;
