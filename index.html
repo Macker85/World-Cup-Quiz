@@ -22,11 +22,14 @@
     <div id="load-user" style="display: none;"></div>
     <div class="question-area">
         <div id="container">
-            <div id="username">
-                <label for="user-input" id="user">Enter your username:</label><br>
-                <input type="text" name="username" id="user-input"><br>
-                <button type="button" id="start" class="buttons">Start Quiz!</button>
-            </div>
+            <div id="required"></div>
+            <form action="/" method="get">
+                <div id="username">
+                    <label for="user-input" id="user">Enter your username:</label><br>
+                    <input type="text" name="username" id="user-input" required><br>
+                    <button type="button" id="start" class="buttons">Start Quiz!</button>
+                </div>
+             </form>
             <div id="quiz" style="display: none">
                 <div id="question"></div>
                 <div id="answers">

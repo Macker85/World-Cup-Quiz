@@ -58,6 +58,8 @@ The colors I choose were more in support of the background image and the main qu
 
 Due to the straightforward design there was very little media queries needed to make this site adaptable to smaller screens, the wireframing is similar across larger screens and the 2 breakpoints I found.
 
+The wireframes are not exactly the same as the finished product but I felt it was good to show where I was going versus where I ended up.
+
 ![wireframe](docs/wireframes/wireframe1.png)
 ![wireframe](docs/wireframes/wireframe2.png)
 ![wireframe](docs/wireframes/wireframe3.png)
@@ -170,15 +172,10 @@ Lighthouse score:
 | Score image not loading apon completion      | File path fixed |
 | Timer not centering in screen      | Set margin to auto |
 
- ## Unresolved Bugs
-
- Bug   
-Images not loading
 
 ## Features I would like to implement
 
 - Randomise questions to add incentive to replay
-- Freeze question on answer to show correct answer and 'next-question' button
 - Add sounds
 - A leaderboard to make it more competitive
 
@@ -191,6 +188,7 @@ To deploy to GitHub, I completed the following steps
 3. Go to the repository settings, and within here select 'pages'
 5. Select `main` in the Source drop down box below the 'Build and deployment' title and click save.
 6. Wait for the live site to become active. Upon reloading a link will appear for the site
+
 
 ## Cloning
 1. On GitHub.com, navigate to the main page of the repository which is ['here'](https://github.com/Macker85/World-Cup-Quiz)
