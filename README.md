@@ -41,7 +41,7 @@ The interactive code was developed in Javascript and the interface was developed
  
 ## Design
 
-This game was designed to feel as it plays with the background image making a competitive feel to the quiz and also that it is effective on most screen sizes, the colours were chosen to support the thyme of the game being the World Cup with gold for the cup and green for a football pitch.
+This game was designed to play with a competitive feel with the background images drawing out this sense and also that it is effective on most screen sizes, the colours were chosen to support the theme of the game being the World Cup with gold for the cup and green for a football pitch.
 
 The game is designed with clear distinction for interactive elements via color scheme & hover effects, making it easier for the user to navigate the site and have a familiar feel to the format.
 
@@ -49,7 +49,7 @@ I also designed the site with my previous project in mind so that I might link t
 
 ### Color Scheme
 
-The colours I choose were more in support of the background image and the main question area was left with some oppacity to ensure that wasn't lost. The gold is to link in with the world cup trophy and the black to make it really stand out.
+The colors I choose were more in support of the background image and the main question area was left with some oppacity to ensure that it wasn't lost. The gold is to link in with the world cup trophy and the black to make it really stand out.
 
 ![color scheme](./docs/color/color-scheme.png)
 
@@ -172,8 +172,8 @@ Lighthouse score:
 
  ## Unresolved Bugs
 
- <!-- Bug   
-(Unable to replicate currently - but not confirmed resolved) - Occasionally some have previously noticed that the next question would not load after selecting next question -->
+ Bug   
+Images not loading
 
 ## Features I would like to implement
 
