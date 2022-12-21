@@ -1,9 +1,9 @@
-//importing questions from questions file
+/** importing questions from questions file */
 import {
     questions
 } from "./questions.mjs";
 
-//getting elements from the DOM
+/** getting elements from the DOM */
 const start = document.getElementById("start");
 const quiz = document.getElementById("quiz");
 const question = document.getElementById("question");
@@ -21,7 +21,7 @@ const user = document.getElementById("load-user");
 const usern = document.getElementById("username");
 
 
-//setting variables
+/** setting variables */
 const lastQuestion = questions.length - 1;
 let runningQuestion = 0;
 let count = 0;
@@ -33,18 +33,18 @@ let score = 0;
 let username;
 
 
-//event listener to start quiz
+/** event listener to start quiz */
 start.addEventListener("click", startQuiz);
 
 
-//function called to enter username and display message on quiz
+/** function called to enter username and display message on quiz */
 document.getElementById("start").onclick = function () {
     username = document.getElementById("user-input").value;
     user.innerHTML = "Good luck " + username;
 };
 
 
-//function called to start quiz
+/** function called to start quiz */
 function startQuiz() {
     start.style.display = "none";
     usern.style.display = "none";
@@ -72,7 +72,7 @@ function startQuiz() {
 // };
 
 
-//function called to load questions
+/** function called to load questions */
 function renderQuestion() {
     let q = questions[runningQuestion];
 
@@ -84,7 +84,7 @@ function renderQuestion() {
 }
 
 
-//function called to load progress bar
+/** function called to load progress bar */
 function renderProgress() {
     for (let qIndex = 0; qIndex <= lastQuestion; qIndex++) {
         progress.innerHTML += "<div class='prog' id=" + qIndex + "></div>";
@@ -92,7 +92,7 @@ function renderProgress() {
 }
 
 
-//function called to load timer
+/** function called to load timer */
 function renderCounter() {
     if (count <= questionTime) {
         counter.innerHTML = count;
@@ -112,13 +112,13 @@ function renderCounter() {
 }
 
 
-//event listeners for answer options
+/** event listeners for answer options */
 answerA.addEventListener("click", checkAnswer);
 answerB.addEventListener("click", checkAnswer);
 answerC.addEventListener("click", checkAnswer);
 answerD.addEventListener("click", checkAnswer);
 
-//function called to check answer selected
+/** function called to check answer selected */
 function checkAnswer(event) {
     const answer = event.target.id;
     if (answer == questions[runningQuestion].correct) {
@@ -138,18 +138,18 @@ function checkAnswer(event) {
 }
 
 
-//function called for incorrect answer
+/** function called for incorrect answer */
 function answerIsWrong() {
     document.getElementById(runningQuestion).style.backgroundColor = "#f00";
 }
 
-//function called for correct answer
+/** function called for correct answer */
 function answerIsCorrect() {
     document.getElementById(runningQuestion).style.backgroundColor = "#d4af37";
 }
 
 
-//function called for final score
+/** function called for final score */
 function scoreRender() {
     scoreDiv.style.display = "block";
     playAgain.style.display = "flex";
@@ -170,7 +170,7 @@ function scoreRender() {
 }
 
 
-//link for 'play-again' button to go back to the start
+/** link for 'play-again' button to go back to the start */
 playAgain.onclick = () => {
     window.location.reload();
 };
