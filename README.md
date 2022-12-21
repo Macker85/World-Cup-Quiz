@@ -168,7 +168,7 @@ Lighthouse score:
 | Progress bar and timer not showing on lauched screen | Typo in HTML |
 | Timer loading on start screen | Set display to none in HTML and load display as block in JS when rendering start quiz      | 
 | Score image not loading apon completion      | File path fixed |
-| Timer not centering in screen      | ??? |
+| Timer not centering in screen      | Set margin to auto |
 
  ## Unresolved Bugs
 

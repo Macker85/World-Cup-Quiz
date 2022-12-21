@@ -41,8 +41,6 @@ html {
     font-weight: bold;
     font-size: 20px;
     color: #d4af37;
-    padding: 10px;
-    border-radius: 10px;
     margin-bottom: 10px;
 }
 
@@ -131,7 +129,7 @@ html {
     text-align: center;
     color: #d4af37;
     background: #000;
-    margin: 0 27%;
+    margin: auto;
 }
 
 #counter {
@@ -239,10 +237,14 @@ html {
     }
 }
 
-@media screen and (max-width: 380px){
-    #nav {
-        min-height: 130px;
-        margin-bottom: 17%;
+@media screen and (max-width: 360px){
+    .heading {
+        font-size: 1.5rem;
+        padding: 0;
+    }
+
+    .fa-house {
+        font-size: 15px;
     }
 
     .question-area {
